@@ -13,6 +13,7 @@ public class SubActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sub);
         TextView textview = findViewById(R.id.textView);
         Bundle arguments = getIntent().getExtras();
+
         String name = arguments.get("key").toString();
         textview.setText("Переданные данные: " + name);
     }
