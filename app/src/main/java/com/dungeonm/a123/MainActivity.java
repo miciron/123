@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity
         {
             public void onClick(View v)
             {
-                String texte = textview.getText().toString();
+                String text1 = textview.getText().toString();
                 Intent intent = new Intent(MainActivity.this, SubActivity.class);
-                intent.putExtra("key", texte);
+                intent.putExtra("key", text1);
                 startActivity(intent);
                 finish();
             }
